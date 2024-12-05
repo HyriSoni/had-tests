@@ -1,0 +1,172 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Модальное окно с кодом доступа */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(224, 1, 91, 0.5);
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+button {
+    background-color: #e0015b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d0004c;
+}
+
+/* Остальной контент (оставьте как есть) */
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 120px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+/* Секция тестов */
+.tests {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.test-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.test-card {
+    background-color: #1f1f1f;
+    border: 2px solid #e0015b;
+    border-radius: 8px;
+    padding: 25px 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(224, 1, 91, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.test-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(224, 1, 91, 0.5);
+    background-color: #2a2a2a;
+}
+
+.test-btn {
+    background-color: #e0015b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.test-btn:hover {
+    background-color: #d0004c;
+    transform: scale(1.1);
+}
+
+/* Модальное окно для тестов */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(224, 1, 91, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #e0015b;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    border-top: 2px solid #e0015b;
+    margin-top: 470px;
+}

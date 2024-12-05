@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAD - Tests</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Модальное окно с кодом доступа -->
+    <div id="accessModal" class="modal">
+        <div class="modal-content">
+            <h2>Введите код доступа</h2>
+            <input type="text" id="accessCode" placeholder="Введите код">
+            <button onclick="checkAccess()">Войти</button>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="" />
+        </div>
+        <h1 class="title">HAD Тесты</h1>
+    </header>
+
+    <section class="tests">
+        <h2>Тесты для рангов</h2>
+        <div class="test-cards">
+            <div class="test-card">
+                <h3>Тест для Интернов</h3>
+                <button class="test-btn" onclick="openTest('https://forms.gle/test1')">Открыть тест</button>
+            </div>
+            <div class="test-card">
+                <h3>Тест для Медиков</h3>
+                <button class="test-btn" onclick="openTest('https://forms.gle/test2')">Открыть тест</button>
+            </div>
+            <div class="test-card">
+                <h3>Тест для Старших Медиков</h3>
+                <button class="test-btn" onclick="openTest('https://forms.gle/test3')">Открыть тест</button>
+            </div>
+            <div class="test-card">
+                <h3>Тест для Старших</h3>
+                <button class="test-btn" onclick="openTest('https://forms.gle/test3')">Открыть тест</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Все права защищены &copy; 2024 HAD</p>
+    </footer>
+
+    <!-- Модальное окно для тестов -->
+    <div id="testModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <iframe id="testIframe" src="" width="100%" height="500"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
